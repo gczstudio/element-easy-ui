@@ -31,7 +31,7 @@ if(fs.existsSync(examplePath)) {
 
 // exec start webpack serve
 const base = './node_modules/.bin';
-const cmd = isProd ? `${base}/cross-env NODE_ENV=production ${base}/webpack --config ./node_modules/element-easy-ui/build/build/webpack.demo.js` :
+const cmd = isProd ? `${base}/cross-env NODE_ENV=production ${base}/webpack --config ./node_modules/element-easy-ui/build/webpack.demo.js` :
 `${base}/cross-env NODE_ENV=development ${base}/webpack-dev-server --config ./node_modules/element-easy-ui/build/webpack.demo.js`
 childprocess.exec(cmd, function(error, stdout, stderr) {
   console.log(error, stdout, stderr);

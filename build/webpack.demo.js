@@ -13,7 +13,7 @@ const webpackConfig = {
   mode: process.env.NODE_ENV,
   entry: path.resolve(__dirname, '../entry.js'),
   output: {
-    path: path.resolve(process.cwd(), './my-ui/'),
+    path: path.resolve(process.cwd(), './element-easy-ui/'),
     publicPath: process.env.CI_ENV || '',
     filename: '[name].[hash:7].js',
     chunkFilename: isProd ? '[name].[hash:7].js' : '[name].js'

@@ -10,6 +10,7 @@ import MainHeader from './components/header';
 import SideNav from './components/side-nav';
 
 import './assets/styles/common.css';
+import './demo-styles//index.scss';
 
 Vue.use(ElementUI);
 Vue.use(VueRouter);
